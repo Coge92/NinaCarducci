@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,22 +18,22 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+header h1 {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -83,6 +83,7 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
+	font-size: 1rem;
 	width: 60%;
 }
 #about-me p {
@@ -136,29 +137,33 @@ body {
 	font-size: 24px;
 }
 
-.quote {
+blockquote {
 	font-family: 'Spectral';
 	font-style: italic;
+	font-size: 2.5rem;
 	width: 70%;
 	margin: auto;
-	padding-block: 3em;
-}
-.quote__text {
-	font-family: Spectral;
-	font-style: italic;
+	padding-block: 1.5em;
 	font-weight: 300;
+	line-height: 1.2;
 
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+	margin-top: 1rem;
 }
 
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
 	position: relative;
+}
+
+#services h2 {
+	font-size: 1.75rem;
 }
 #services .container::before{
 	content: ' ';
