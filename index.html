@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> <!-- Ajout de l'attribut lang="fr" afin d'indiquer que le page est en francais -->
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nina Carducci, photographe professionnelle et passionnée</title>
-	<meta name="description" content="Découvrez un photographe passionné prêt à capturer vos moments les plus précieux et à les rendre immortels. Avec une approche unique et une technique maîtrisée, je vous propose de figer vos instants de bonheur, de tendresse et de lumière à travers mon regard. Basé en Île-de-France, je me déplace pour des séances de shooting photo, assurant des souvenirs impérissables. Profitez également de mes services de retouche professionnelle pour sublimer vos clichés et obtenir un rendu optimal pour toutes vos publications. Faites confiance à mon expertise pour transformer vos photos en véritables trésors visuels.">
-	<link rel="stylesheet" defer href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" defer href="https://fonts.googleapis.com">
-	<link rel="preconnect" defer href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<title>Nina Carducci, photographe professionnelle et passionnée</title> 	<!-- Ajout d'une balise Title -->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow"> <!-- Ajout de la balise meta d'indexation et follow des liens -->
+
+	<!-- Ajout d'une meta description -->
+	<meta name="description" content="Découvrez un photographe passionné prêt à capturer vos moments les plus précieux et à les rendre immortels. Avec une approche unique et une technique maîtrisée, je vous propose de figer vos instants de bonheur, de tendresse et de lumière à travers mon regard. Basée en Île-de-France, je me déplace pour des séances de shooting photo, assurant des souvenirs impérissables. Profitez également de mes services de retouche professionnelle pour sublimer vos clichés et obtenir un rendu optimal pour toutes vos publications. Faites confiance à mon expertise pour transformer vos photos en véritables trésors visuels.">
+	
+	<!-- Ajout des meta OpenGraph -->
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Nina Carducci, photographe professionnelle et passionnée">
+	<meta property="og:description" content="Découvrez un photographe passionné prêt à capturer vos moments les plus précieux et à les rendre immortels. Avec une approche unique et une technique maîtrisée, je vous propose de figer vos instants de bonheur, de tendresse et de lumière à travers mon regard. Basée en Île-de-France, je me déplace pour des séances de shooting photo, assurant des souvenirs impérissables. Profitez également de mes services de retouche professionnelle pour sublimer vos clichés et obtenir un rendu optimal pour toutes vos publications. Faites confiance à mon expertise pour transformer vos photos en véritables trésors visuels">
+	<meta property="og:site_name" content="Site web de Nina Carducci">
+	<meta property="og:url" content="https://coge92.github.io/NinaCarducci/">
+	<meta property="og:image" content="https://coge92.github.io/NinaCarducci/assets/images/nina-carducci.webp">
+
+	<!-- Ajout des meta Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@CompteTwitterNinaCarducci" />
+	<meta name="twitter:title" content="Nina Carducci, photographe professionnelle et passionnée" />
+	<meta name="twitter:description" content="Découvrez un photographe passionné prêt à capturer vos moments les plus précieux et à les rendre immortels. Avec une approche unique et une technique maîtrisée, je vous propose de figer vos instants de bonheur, de tendresse et de lumière à travers mon regard. Basée en Île-de-France, je me déplace pour des séances de shooting photo, assurant des souvenirs impérissables. Profitez également de mes services de retouche professionnelle pour sublimer vos clichés et obtenir un rendu optimal pour toutes vos publications. Faites confiance à mon expertise pour transformer vos photos en véritables trésors visuels" />
+	<meta name="twitter:url" content="https://coge92.github.io/NinaCarducci/" />
+	<meta name="twitter:image" content="https://coge92.github.io/NinaCarducci/assets/images/nina-carducci.webp" />
+
+	<link rel="stylesheet" defer href="./assets/bootstrap/bootstrap.css"> <!-- Ajout defer pour optimisation du chargement -->
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preconnect" defer href="https://fonts.googleapis.com"> <!-- Ajout defer pour optimisation du chargement -->
+	<link rel="preconnect" defer href="https://fonts.gstatic.com" crossorigin> <!-- Ajout defer pour optimisation du chargement -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+
+	<!-- Ajout du Rich Snippet -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Photographe",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressRegion": "Île-de-France",
+		  },
+		  "name": "Nina Carducci",
+		  "url": "https://coge92.github.io/NinaCarducci/"
+		}
+	</script>
+
 </head>
 <body>
-	<header>
-		<h1>Nina Carducci</h1>
+	<header> <!-- Modifications de la structure HTML avec header, h1, nav -->
+		<h1>Nina Carducci</h1> <!-- Modification de la balise en H1 -->
 		<nav>   
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -25,12 +62,12 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" aria-label="Lien vers la page Instagram de Nina Carducci" target="_blank"><img src="assets/images/logo-instagram.webp" alt="Logo d'Instagram"></a></li>
-				<!-- Modification de format du logo en WEBP, compression pour réduire le poids et changement du nom du logo pour une meilleure lisibilité -->
+				<!-- Modification de format du logo en WEBP, compression pour réduire le poids et changement du nom du logo pour une meilleure lisibilité, ajout de l'aria-label -->
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main> <!-- Modifications de la structure HTML avec main et section -->
 		<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,6 +78,7 @@
 				<div class="carousel-item active">
 					<img fetchpriority="high" src="./assets/images/slider/Photo-Sidewalk-ryoji-iwata.webp" class="d-block w-100" alt="Photo d'un homme d'affaires marchant sur un passage pieton">
 					<!-- Modification de format de l'image en WEBP, compression pour réduire le poids et changement du nom de l'image pour une meilleure lisibilité -->
+					<!-- Ajout de l'attribut fetchpriority="high" pour optimiser le LCP (largest Contentful Paint)-->
 				</div>
 				<div class="carousel-item">
 					<img src="./assets/images/slider/Photo-Festival-nicholas-green.webp" class="d-block w-100" alt="Photo du public d'un concernt ayant les bras levés">
@@ -61,10 +99,10 @@
 			</button>
 		</section>
 
-
-		<section id="about">
+		<!-- Modifications de la structure HTML, notamment les H2, h3, blockquote-->
+		<section id="about"> 
 			<div class="picture left">
-				<img src="./assets/images/nina-carducci.webp" alt="Photo portrait de Nina Carducci">
+				<img src="./assets/images/nina-carducci.webp" alt="Photo portrait de Nina Carducci"> <!-- Attribut alt ajouté-->
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
