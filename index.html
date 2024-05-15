@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<title>Nina Carducci, photographe professionnelle et passionnée</title>
+	<meta name="description" content="Découvrez un photographe passionné prêt à capturer vos moments les plus précieux et à les rendre immortels. Avec une approche unique et une technique maîtrisée, je vous propose de figer vos instants de bonheur, de tendresse et de lumière à travers mon regard. Basé en Île-de-France, je me déplace pour des séances de shooting photo, assurant des souvenirs impérissables. Profitez également de mes services de retouche professionnelle pour sublimer vos clichés et obtenir un rendu optimal pour toutes vos publications. Faites confiance à mon expertise pour transformer vos photos en véritables trésors visuels.">
+	<link rel="stylesheet" defer href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" defer href="https://fonts.googleapis.com">
+	<link rel="preconnect" defer href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
 </head>
@@ -22,7 +24,7 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/logo-instagram.webp" alt=""></a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" aria-label="Lien vers la page Instagram de Nina Carducci" target="_blank"><img src="assets/images/logo-instagram.webp" alt="Logo d'Instagram"></a></li>
 				<!-- Modification de format du logo en WEBP, compression pour réduire le poids et changement du nom du logo pour une meilleure lisibilité -->
 			</ul>
 		</nav>
@@ -62,7 +64,7 @@
 
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina-carducci.webp">
+				<img src="./assets/images/nina-carducci.webp" alt="Photo portrait de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -144,17 +146,17 @@
 				<h3>Une question ? Une demande de devis ?</h3>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label>Nom</label>
+					<label for="nom">Nom</label>  <!-- ajout de l'attribut "for" dans la balise label -->
 					<input type="text" name="nom" id="nom">
-					<label>Email</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
-					<label>Message</label>
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer"/>
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp">
+				<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo">
 				<!-- Modification de format de l'image en WEBP, compression pour réduire le poids et changement du nom de l'image pour une meilleure lisibilité -->
 			</div>
 		</div>

@@ -29,7 +29,7 @@ nav ul {
 	margin-bottom: 0;
 }
 
-nav li {
+nav li, .nav-item {
 	padding-inline: 10px;
 }
 
@@ -97,13 +97,14 @@ nav a {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5B5625; /* Changement de couleur pour un meilleur contraste */
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
